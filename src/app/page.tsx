@@ -31,7 +31,7 @@ export default function Home() {
             <div className="inline-flex items-center w-full justify-between">
 
             <div className="inline-flex gap-2 items-center">
-              <Image src={"/favicon.ico"} height={50} width={50} alt="icon" />
+              <Image src={"./favicon.ico"} height={50} width={50} alt="icon" />
               <h1 className="text-2xl">Karppa</h1>
             </div>
             <div className="inline-flex gap-2 items-baseline">
