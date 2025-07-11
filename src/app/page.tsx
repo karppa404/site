@@ -48,7 +48,7 @@ export default function Home() {
 
               <HoverCard>
                 <HoverCardTrigger>
-                  <Link href={"https://github.com/karppa404"}>
+                  <Link href={"https://jottingannon.substack.com/"}>
                     <BsSubstack className="size-6" />
                   </Link>
                 </HoverCardTrigger>
