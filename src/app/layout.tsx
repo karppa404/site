@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider"
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
-import { AppSidebar, } from "@/components/app-sidebar";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Karppa",
-  description: "Personal site",
+  description: "Personal Site",
 };
 
 export default function RootLayout({
@@ -31,23 +28,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <SidebarProvider>
-            <AppSidebar />
-
-            <SidebarInset className="">
-              <div className="visible md:hidden">
-                <SidebarTrigger />
-              </div>
-              {children}
-            </SidebarInset>
-          </SidebarProvider>
-        </ThemeProvider>
+   <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );
