@@ -25,7 +25,7 @@ export default function Home() {
         alt="bg" 
         className="absolute inset-0 -z-10 blur-md w-full h-full object-cover" 
       />
-      <Card className="max-w-xl w-5/6 md:w-full mx-4 sm:mx-0 bg-background/50 backdrop-blur-md">
+      <Card className="max-w-xl w-5/6 md:w-full mx-4 sm:mx-0 bg-background/50 backdrop-blur-md shadow-background shadow-2xl">
         <CardHeader >
           <CardTitle className="flex flex-col items-center justify-between ">
             <div className="inline-flex items-center w-full justify-between">
